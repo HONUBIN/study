@@ -1,34 +1,18 @@
 {
   "main": {
-    "id": "2a233a2aacf02bf4",
+    "id": "5e8f827ba6768756",
     "type": "split",
     "children": [
       {
-        "id": "6c9584918537f21a",
+        "id": "08c6212b831ae3c3",
         "type": "tabs",
         "children": [
           {
-            "id": "63fb9c0f56f032ae",
+            "id": "53bb98056f15654b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CS/Process vs Thread.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e2499d399dcb8282",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CS/Stack vs Heap.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -37,15 +21,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "42411e8649e5acd3",
+    "id": "4dceb9ffc78aa735",
     "type": "split",
     "children": [
       {
-        "id": "ae8546db7ba9a961",
+        "id": "e4940e3255ed996c",
         "type": "tabs",
         "children": [
           {
-            "id": "74610db3fc2e2091",
+            "id": "437d2831e0262b56",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -55,7 +39,7 @@
             }
           },
           {
-            "id": "44c0a4da710cfcf6",
+            "id": "42dedb94c327da9b",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -70,7 +54,7 @@
             }
           },
           {
-            "id": "a8c6abdf04b32d07",
+            "id": "54145c6402714978",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -84,20 +68,19 @@
     "width": 300
   },
   "right": {
-    "id": "9f38cf6040b91c70",
+    "id": "a2fb2e5aaeed7887",
     "type": "split",
     "children": [
       {
-        "id": "6d10a504a216d3dc",
+        "id": "aa6784e00b1f1b42",
         "type": "tabs",
         "children": [
           {
-            "id": "4fba0ebbf5c2a787",
+            "id": "393143051205dce7",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS/Process vs Thread.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,19 +92,18 @@
             }
           },
           {
-            "id": "8e410c4473650173",
+            "id": "9b0a7a4db049e244",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CS/Process vs Thread.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "e342ff891d5fcaa5",
+            "id": "e6df2d5baea8c81f",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -132,13 +114,11 @@
             }
           },
           {
-            "id": "f3e8d039980e7d21",
+            "id": "c199959e50735027",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "CS/Process vs Thread.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -158,12 +138,6 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "63fb9c0f56f032ae",
-  "lastOpenFiles": [
-    "CS/Stack vs Heap.md",
-    "CS/Race Condition.md",
-    "CS/Process vs Thread.md",
-    "CS/Parallelism(병렬성) vs Concurrency(동시성).md",
-    "CS"
-  ]
+  "active": "53bb98056f15654b",
+  "lastOpenFiles": []
 }
