@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "08c6212b831ae3c3",
+        "id": "974d19fe2981cfb6",
         "type": "tabs",
         "children": [
           {
-            "id": "53bb98056f15654b",
+            "id": "6307a0a62b9ee20d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "README.md"
+              }
             }
           }
         ]
@@ -138,6 +146,13 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "53bb98056f15654b",
-  "lastOpenFiles": []
+  "active": "6307a0a62b9ee20d",
+  "lastOpenFiles": [
+    "CS/Parallelism vs Concurrency.md",
+    "README.md",
+    "CS/Race Condition.md",
+    "CS/Stack vs Heap.md",
+    "CS/Process vs Thread.md",
+    "무제 폴더"
+  ]
 }
