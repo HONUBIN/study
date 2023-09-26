@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "CS/Parallelism vs Concurrency.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -148,11 +148,11 @@
   },
   "active": "b2c5d2323bc2d594",
   "lastOpenFiles": [
+    "CS/Process vs Thread.md",
+    "CS/Race Condition.md",
+    "CS/Stack vs Heap.md",
     "CS/Parallelism vs Concurrency.md",
     "README.md",
-    "CS/Race Condition.md",
-    "CS/Process vs Thread.md",
-    "CS/Stack vs Heap.md",
     "무제 폴더"
   ]
 }

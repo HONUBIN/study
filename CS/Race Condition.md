@@ -1,25 +1,21 @@
----
-
+___
 ## 정의
 
 - 공유 자원에 대해 여러 프로세스가 동시에 접근을 시도할 때, 타이밍이나 순서 등이 결과값에 영향을 줄 수 있는 상태
 
 ---
-
 ## Deadlock
 
 - 여러 프로세스나 스레드가 절대 일어나지 않는 이벤트나 자원 할당을 위해 무한정 대기하는 상태
 - 데드락이 발생하면 프로세스는 blocked 상태에서 무한히 대기한다
 
 ---
-
 ## Starvation
 
 - 프로세스가 CPU 자원의 할당을 무한히 대기하는 상태
 - CPU 스케줄링과 밀접한 관련이 있다
 
 ---
-
 ## Critical Section(임계영역)
 
 - 정의
@@ -33,7 +29,6 @@
     - 프로세스는 유한 시간 내에 critical section에 진입할 수 있어야 한다(starvation free)
 
 ---
-
 ## Critical Section Problem 해결
 
 ### Peterson's Algorithm
@@ -56,7 +51,6 @@
 - 세마포어는 Signaling 메커니즘으로 락을 걸지 않은 스레드도 signal을 사용해 락을 해제할 수 있다
 
 ---
-
 ## References
 
 - https://velog.io/@klloo/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C-%EA%B2%BD%EC%9F%81-%EC%83%81%ED%83%9C-Race-Condition
