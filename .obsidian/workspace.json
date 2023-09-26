@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "974d19fe2981cfb6",
+        "id": "ac25b3e8b4aae023",
         "type": "tabs",
         "children": [
           {
-            "id": "6307a0a62b9ee20d",
+            "id": "b2c5d2323bc2d594",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "CS/Parallelism vs Concurrency.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "CS/Parallelism vs Concurrency.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "CS/Parallelism vs Concurrency.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "CS/Parallelism vs Concurrency.md"
               }
             }
           }
@@ -146,13 +146,13 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "6307a0a62b9ee20d",
+  "active": "b2c5d2323bc2d594",
   "lastOpenFiles": [
     "CS/Parallelism vs Concurrency.md",
     "README.md",
     "CS/Race Condition.md",
-    "CS/Stack vs Heap.md",
     "CS/Process vs Thread.md",
+    "CS/Stack vs Heap.md",
     "무제 폴더"
   ]
 }
