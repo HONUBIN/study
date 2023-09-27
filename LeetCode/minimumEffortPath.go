@@ -1,111 +1,120 @@
 package main
 
-import (
-	"encoding/json"
-	"math"
-	"strconv"
-)
+var efforts [][]int
+var visit [][]bool
+var rows int
+var cols int
+var max int = 1000001
 
-var mem map[string]map[int]int
-var globalHeights [][]int
-
-func minimumEffortPath(heights [][]int) int {
-	mem = make(map[string]map[int]int)
-	globalHeights = heights
-	path := make([][]int, len(heights))
-	for i := range path {
-		path[i] = make([]int, len(heights[0]))
+// queue method will improve the performance
+func getMinNode() (int, int) {
+	min := max
+	row := -1
+	col := -1
+	for i := 0; i < rows; i++ {
+		for j := 0; j < cols; j++ {
+			if !visit[i][j] && efforts[i][j] < min {
+				min = efforts[i][j]
+				row = i
+				col = j
+			}
+		}
 	}
 
-	return goAhead(0, 0, path, 0)
+	return row, col
 }
 
-func goAhead(row int, col int, path [][]int, prevDirection int) int {
-	min := 1000000
-	pathBytes, _ := json.Marshal(path)
-	pathString := strconv.Itoa(row) + strconv.Itoa(col) + string(pathBytes)
-	if direction, ok := mem[pathString]; ok {
-		for i := 0; i < 4; i++ {
-			if i == prevDirection {
-				continue
-			}
-			if direction[i] < min {
-				min = direction[i]
-			}
-		}
-	} else {
-		for i := 0; i < 4; i++ {
-			mem[pathString][i] = min
-		}
-	}
-
-	if row == len(path)-1 && col == len(path[0])-1 {
-		path[row][col] = 1
+func minimumEffortPath(heights [][]int) int {
+	rows = len(heights)
+	cols = len(heights[0])
+	if rows == 1 && cols == 1 {
 		return 0
 	}
 
-	path[row][col] = 1
-	current := globalHeights[row][col]
-
-	// up
-	if row > 0 && col > 0 && col < len(path[0])-1 {
-		i := row - 1
-		j := col
-		next := globalHeights[i][j]
-		if path[i][j] != 1 {
-			result := math.Max(math.Abs(float64(next-current)), float64(goAhead(i, j, path, 1)))
-			mem[pathString][0] = int(result)
-			path[i][j] = 0
-			if int(result) < min {
-				min = int(result)
-			}
+	efforts = make([][]int, rows)
+	for i := range efforts {
+		efforts[i] = make([]int, cols)
+		for j := range efforts[i] {
+			efforts[i][j] = max
 		}
 	}
+	efforts[0][0] = 0
 
-	// down
-	if row < len(path)-1 {
-		i := row + 1
-		j := col
-		next := globalHeights[i][j]
-		if path[i][j] != 1 {
-			result := math.Max(math.Abs(float64(next-current)), float64(goAhead(i, j, path, 0)))
-			mem[pathString][1] = int(result)
-			path[i][j] = 0
-			if int(result) < min {
-				min = int(result)
-			}
-		}
+	visit = make([][]bool, rows)
+	for i := range visit {
+		visit[i] = make([]bool, cols)
 	}
 
+	for {
+		i, j := getMinNode()
+		if i < 0 && j < 0 {
+			break
+		}
+		visit[i][j] = true
+		update(heights, i, j, rows, cols)
+	}
+
+	return efforts[rows-1][cols-1]
+}
+
+func update(heights [][]int, i, j, rows, cols int) {
+	var diff int
 	// left
-	if row > 0 && row < len(path)-1 && col > 0 {
-		i := row
-		j := col - 1
-		next := globalHeights[i][j]
-		if path[i][j] != 1 {
-			result := math.Max(math.Abs(float64(next-current)), float64(goAhead(i, j, path, 3)))
-			mem[pathString][2] = int(result)
-			path[i][j] = 0
-			if int(result) < min {
-				min = int(result)
-			}
+	if j-1 > -1 {
+		if abs(heights[i][j]-heights[i][j-1]) > efforts[i][j] {
+			diff = abs(heights[i][j] - heights[i][j-1])
+		} else {
+			diff = efforts[i][j]
+		}
+
+		if diff < efforts[i][j-1] {
+			efforts[i][j-1] = diff
 		}
 	}
 
 	// right
-	if col < len(path[0])-1 {
-		i := row
-		j := col + 1
-		next := globalHeights[i][j]
-		if path[i][j] != 1 {
-			result := math.Max(math.Abs(float64(next-current)), float64(goAhead(i, j, path, 2)))
-			mem[pathString][3] = int(result)
-			path[i][j] = 0
-			if int(result) < min {
-				min = int(result)
-			}
+	if j+1 < cols {
+		if abs(heights[i][j]-heights[i][j+1]) > efforts[i][j] {
+			diff = abs(heights[i][j] - heights[i][j+1])
+		} else {
+			diff = efforts[i][j]
+		}
+
+		if diff < efforts[i][j+1] {
+			efforts[i][j+1] = diff
 		}
 	}
 
-	return min
+	// up
+	if i-1 > -1 {
+		if abs(heights[i][j]-heights[i-1][j]) > efforts[i][j] {
+			diff = abs(heights[i][j] - heights[i-1][j])
+		} else {
+			diff = efforts[i][j]
+		}
+
+		if diff < efforts[i-1][j] {
+			efforts[i-1][j] = diff
+		}
+	}
+
+	// down
+	if i+1 < rows {
+		if abs(heights[i][j]-heights[i+1][j]) > efforts[i][j] {
+			diff = abs(heights[i][j] - heights[i+1][j])
+		} else {
+			diff = efforts[i][j]
+		}
+
+		if diff < efforts[i+1][j] {
+			efforts[i+1][j] = diff
+		}
+	}
+}
+
+func abs(x int) int {
+	if x < 0 {
+		return -x
+	}
+	return x
 }
