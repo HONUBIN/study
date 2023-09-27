@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS/Parallelism vs Concurrency.md",
+                "file": "README.md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS/Parallelism vs Concurrency.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CS/Parallelism vs Concurrency.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS/Parallelism vs Concurrency.md"
+                "file": "README.md"
               }
             }
           }
@@ -148,11 +148,20 @@
   },
   "active": "b2c5d2323bc2d594",
   "lastOpenFiles": [
+    "CS/Parallelism vs Concurrency.md",
     "CS/Process vs Thread.md",
     "CS/Race Condition.md",
     "CS/Stack vs Heap.md",
-    "CS/Parallelism vs Concurrency.md",
     "README.md",
-    "무제 폴더"
+    "LeetCode/singleNonDuplicate.go",
+    "LeetCode/primeSubOperation.go",
+    "LeetCode/populatingNextRightPointers.go",
+    "LeetCode/numTeams.go",
+    "LeetCode/minSubArrayLen.go",
+    "LeetCode/minimumEffortPath.go",
+    "LeetCode/maxSumDivThree.go",
+    "LeetCode/maxNumberOfBalloons.go",
+    "LeetCode/majorityElement.go",
+    "LeetCode/main.go"
   ]
 }
