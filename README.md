@@ -5,6 +5,10 @@ ___
 - [Process vs Thread](CS/Process%20vs%20Thread.md)
 - [Race Condition](CS/Race%20Condition.md)
 - [Stack vs Heap](CS/Stack%20vs%20Heap.md)
+___
+## Tech
+- [Gin Framework](Tech/Gin%20Framework.md)
+___
 ## LeetCode
 - [Asteroid Collision](https://leetcode.com/problems/asteroid-collision/) - [Answer](LeetCode/asteroidCollision.go)
 - [Can Convert String in K Moves](https://leetcode.com/problems/can-convert-string-in-k-moves/) - [Answer](LeetCode/canConvertString.go)
