@@ -8,12 +8,24 @@
         "type": "tabs",
         "children": [
           {
+            "id": "55ea5a35d9c815d9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tech/Gin Framework.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "b2c5d2323bc2d594",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Tech/Gin Framework.md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Tech/Gin Framework.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Tech/Gin Framework.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Tech/Gin Framework.md"
               }
             }
           }
@@ -146,13 +158,15 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "b2c5d2323bc2d594",
+  "active": "55ea5a35d9c815d9",
   "lastOpenFiles": [
-    "CS/Parallelism vs Concurrency.md",
-    "CS/Process vs Thread.md",
-    "CS/Race Condition.md",
     "CS/Stack vs Heap.md",
+    "Tech/Gin Framework.md",
+    "CS/Race Condition.md",
+    "CS/Process vs Thread.md",
+    "CS/Parallelism vs Concurrency.md",
     "README.md",
+    "Tech",
     "LeetCode/singleNonDuplicate.go",
     "LeetCode/primeSubOperation.go",
     "LeetCode/populatingNextRightPointers.go",
@@ -161,7 +175,6 @@
     "LeetCode/minimumEffortPath.go",
     "LeetCode/maxSumDivThree.go",
     "LeetCode/maxNumberOfBalloons.go",
-    "LeetCode/majorityElement.go",
-    "LeetCode/main.go"
+    "LeetCode/majorityElement.go"
   ]
 }
