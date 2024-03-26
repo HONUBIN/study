@@ -1,15 +1,22 @@
-___
+---
+
 ## CS
 
 - [Parallelism vs Concurrency](CS/Parallelism%20vs%20Concurrency.md)
 - [Process vs Thread](CS/Process%20vs%20Thread.md)
 - [Race Condition](CS/Race%20Condition.md)
 - [Stack vs Heap](CS/Stack%20vs%20Heap.md)
-___
+
+---
+
 ## Tech
+
 - [Gin Framework](Tech/Gin%20Framework.md)
-___
+
+---
+
 ## LeetCode
+
 - [Asteroid Collision](https://leetcode.com/problems/asteroid-collision/) - [Answer](LeetCode/asteroidCollision.go)
 - [Can Convert String in K Moves](https://leetcode.com/problems/can-convert-string-in-k-moves/) - [Answer](LeetCode/canConvertString.go)
 - [Can I Win](https://leetcode.com/problems/can-i-win/) - [Answer](LeetCode/canIWin.go)
@@ -34,3 +41,8 @@ ___
 - [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/) - [Answer](LeetCode/findItinerary.go)
 - [Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/) - [Answer](LeetCode/singleNonDuplicate.go)
 - [Unique Length-3 Palindromic Subsequences](https://leetcode.com/problems/unique-length-3-palindromic-subsequences/) - [Answer](LeetCode/countPalindromicSubsequence.go)
+- [Find Players With Zero or One Losses](https://leetcode.com/problems/find-players-with-zero-or-one-losses/description/) - [Answer](LeetCode/findWinners.go)
+- [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/) - [Answer](LeetCode/lowestCommonAncestor.go)
+- [Reverse Integer](https://leetcode.com/problems/reverse-integer/description/) - [Answer](LeetCode/reverseInteger.go)
+- [Shortest Unsorted Continuous Subarray](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/description/) - [Answer](LeetCode/findUnsortedSubarray.go)
+- [Heaters](https://leetcode.com/problems/heaters/description/) - [Answer](LeetCode/findRadius.go)
