@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "README.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -161,11 +161,11 @@
   "active": "95771ce7da3699e0",
   "lastOpenFiles": [
     "CS/MD5 vs SHA vs RSA vs AES.md",
+    "README.md",
     "CS/Parallelism vs Concurrency.md",
     "CS/Stack vs Heap.md",
     "CS/Race Condition.md",
     "CS/Process vs Thread.md",
-    "README.md",
     "Tech/Gin Framework.md",
     "Tech.md",
     "Tech",
